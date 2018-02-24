@@ -1,0 +1,140 @@
+@import 'neat';
+
+$base-font-family: -apple-system-font, "Source Sans Pro", sans-serif;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$text-color: #333;
+$light-text: #666;
+$lighter-text: #999;
+
+$purple: #5e35b1;
+$purple-lighter: #9162e4;
+$purple-darker: #280680;
+
+$blue: #2196f3;
+$blue-lighter: #6ec6ff;
+$blue-darker: #0069c0;
+
+$accent-font: "Nunito", sans-serif;
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+pre {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1;
+  color: $purple;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $text-color;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: $blue;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+    color: $blue-darker;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+$base-grid: (
+  columns: 1,
+  gutter: 2rem,
+);
+
+$expanded-grid: (
+  columns: 12,
+  gutter: 2rem,
+  media: "(min-width: 768px)",
+);
+
+.container {
+  @include grid-container;
+}
+
+.sidebar {
+  padding-top: 2rem;
+  @include grid-column(1, $base-grid);
+  @include grid-media($expanded-grid) {
+    @include grid-column(3);
+  }
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.content {
+  padding-top: 2rem;
+  overflow: hidden;
+  @include grid-column(1, $base-grid);
+  @include grid-media($expanded-grid) {
+    @include grid-column(9);
+  }
+}
+
+footer {
+  @include grid-column(1, $base-grid);
+  font-size: 0.8rem;
+  padding: 2rem 0;
+  font-weight: 500;
+  color: $light-text;
+}
+
+@import 'bitski/base';
+@import 'bitski/syntax';
