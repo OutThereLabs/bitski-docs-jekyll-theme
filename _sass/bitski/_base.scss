@@ -116,15 +116,14 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
+pre {
   @include relative-font-size(0.9);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
 }
 
 code {
-  padding: 1px 5px;
+  
 }
 
 pre {

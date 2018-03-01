@@ -92,6 +92,18 @@ ul {
   list-style: none;
 }
 
+hr {
+  margin: 1rem 0;
+  height: 1px;
+  display: block;
+  border: none;
+  background: #eee;
+}
+
+hr+hr {
+  display: none;
+}
+
 $base-grid: (
   columns: 1,
   gutter: 2rem,
