@@ -84,6 +84,7 @@ h4 {
 
 h5 {
   font-size: 0.95rem;
+  color: #333;
 }
 
 a {
@@ -101,7 +102,7 @@ ul {
 
 hr {
   margin: 1rem 0;
-  height: 1px;
+  height: 2px;
   display: block;
   border: none;
   background: #eee;
@@ -109,6 +110,20 @@ hr {
 
 hr+hr {
   display: none;
+}
+
+small {
+  font-size: 0.6em;
+  color: $grey-color;
+}
+
+small a {
+  font-weight: normal;
+  color: $grey-color;
+}
+
+code {
+  color: $grey-color-dark;
 }
 
 $base-grid: (
