@@ -36,6 +36,8 @@ $blue: #2196f3;
 $blue-lighter: #6ec6ff;
 $blue-darker: #0069c0;
 
+$code-font: Menlo, Bitstream Vera Sans Mono, Monaco, Consolas, monospace;
+
 $accent-font: "Nunito", sans-serif;
 
 @mixin relative-font-size($ratio) {
@@ -130,6 +132,10 @@ small {
 small a {
   font-weight: normal;
   color: $grey-color;
+}
+
+code, pre {
+  font-family: $code-font;
 }
 
 code {
