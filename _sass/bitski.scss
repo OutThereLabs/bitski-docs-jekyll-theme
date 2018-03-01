@@ -48,6 +48,9 @@ $accent-font: "Nunito", sans-serif;
   }
 }
 
+@import 'bitski/base';
+@import 'bitski/syntax';
+
 pre {
   margin-bottom: 1rem;
 }
@@ -70,13 +73,17 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1.1rem;
 }
 
 a {
@@ -147,6 +154,3 @@ footer {
   font-weight: 500;
   color: $light-text;
 }
-
-@import 'bitski/base';
-@import 'bitski/syntax';
