@@ -88,7 +88,8 @@ h4 {
 
 h5 {
   font-size: 0.95rem;
-  color: #333;
+  color: #666;
+  font-weight: 400;
 }
 
 a {
@@ -116,8 +117,13 @@ hr+hr {
   display: none;
 }
 
+p small {
+  display: block;
+  margin-top: -1rem;
+}
+
 small {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: $grey-color;
 }
 
@@ -127,7 +133,7 @@ small a {
 }
 
 code {
-  color: $grey-color-dark;
+  color: #777;
 }
 
 $base-grid: (
