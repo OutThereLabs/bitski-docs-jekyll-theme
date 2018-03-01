@@ -36,7 +36,7 @@ $blue: #2196f3;
 $blue-lighter: #6ec6ff;
 $blue-darker: #0069c0;
 
-$code-font: Menlo, Bitstream Vera Sans Mono, Monaco, Consolas, monospace;
+$code-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 $accent-font: "Nunito", sans-serif;
 
@@ -89,8 +89,8 @@ h4 {
 }
 
 h5 {
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #555;
   font-weight: 400;
 }
 
@@ -121,7 +121,7 @@ hr+hr {
 
 p small {
   display: block;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
 }
 
 small {
