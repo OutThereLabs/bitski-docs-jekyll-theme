@@ -1,7 +1,10 @@
-<nav>
-  <ul>
-    {% for item in site.data.docs %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+<div class="wy-menu wy-menu-vertical">
+  {% for category in site.data.docs %}
+  <h4>{{ category.title }}</h4>
+  <ul class="current">
+    {% for item in category.items %}
+      <li class="toctree-l1"><a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
-</nav>
+  {% endfor %}
+</div>

@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang }}" xml:lang="{{ site.lang }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/plain" rel="author" href="{{ "humans.txt" | absolute_url }}" />
-    <link rel="shortcut icon" href="{{ "/favicon.ico?v=" | append: site.github.build_revision | relative_url }}">
-    <link href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}" rel="stylesheet" media="screen">
-  </head>
-  <body class="{{ page.layout }}">
-    <div class="container">
-      <div class="content" id="content" role="main">
-        {{ content }}
-      </div>
-      {% include nav.html %}
-    </div>
-  </body>
-</html>
+---
+layout: default
+---
+
+{{ content }}

@@ -1,5 +1,15 @@
-- title: Getting Started
-  url: /
+- title: Documentation
+  items:
+    - title: Getting Started
+      url: /
 
-- title: Test
-  url: /test
+    - title: Test
+      url: /test
+
+- title: More Docs
+  items:
+    - title: Bitski Documentation
+      url: https://docs.bitski.com
+
+    - title: Developer Portal
+      url: https://developer.bitski.com
